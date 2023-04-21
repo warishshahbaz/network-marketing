@@ -133,11 +133,16 @@ const Register = () => {
             residence: ["zhejiang", "hangzhou", "xihu"],
             prefix: "86",
           }}
-          style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column" }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
           scrollToFirstError
         >
           <div className=" w-[100%]  flex justify-between items-center ">
-          <Form.Item
+            <Form.Item
               name="number"
               label="Sponcer ID"
               rules={[
@@ -150,39 +155,40 @@ const Register = () => {
             >
               <Input />
             </Form.Item>
-            <Button size="small" className="mb-4 " >Validate</Button>
+            <Button size="small" className="mb-4 ">
+              Validate
+            </Button>
             <Form.Item
-              
-              name="email"
+              className="w-[300px] "
+              name="name"
               label="Name"
               rules={[
                 {
-                  type: "email",
-                  message: "The input is not valid E-mail!",
+                  type: "name",
+                  message: "The input is not valid name!",
                 },
                 {
                   required: true,
-                  message: "Please input your E-mail!",
+                  message: "Please input your name!",
                 },
               ]}
             >
               <Input />
             </Form.Item>
-           
           </div>
           <div className="flex w-[100%]   justify-between items-center ">
             <Form.Item
-              className="min-w-[250px] "
+              className="w-[350px] "
               name="radio-group"
               label="Position"
               rules={[
                 {
                   type: "email",
-                  message: "The input is not valid E-mail!",
+                  message: "The input is not valid name!",
                 },
                 {
                   required: true,
-                  message: "Please input your E-mail!",
+                  message: "Please input your name!",
                 },
               ]}
             >
@@ -193,16 +199,17 @@ const Register = () => {
             </Form.Item>
 
             <Form.Item
-              name="email"
+              name="fathername"
               label="Father Name"
+              className="w-[300px] "
               rules={[
                 {
                   type: "email",
-                  message: "The input is not valid E-mail!",
+                  message: "The input is not valid father name!",
                 },
                 {
                   required: true,
-                  message: "Please input your E-mail!",
+                  message: "Please input your father name!",
                 },
               ]}
             >
@@ -217,11 +224,11 @@ const Register = () => {
               rules={[
                 {
                   type: "email",
-                  message: "The input is not valid E-mail!",
+                  message: "The input is not valid Gender!",
                 },
                 {
                   required: true,
-                  message: "Please input your E-mail!",
+                  message: "Please input your Gender!",
                 },
               ]}
             >
@@ -232,16 +239,17 @@ const Register = () => {
               </Radio.Group>
             </Form.Item>
             <Form.Item
-              name="email"
+              name="dob"
               label="DOB"
+              className="w-[300px] "
               rules={[
                 {
                   type: "email",
-                  message: "The input is not valid E-mail!",
+                  message: "The input is not valid DOB!",
                 },
                 {
                   required: true,
-                  message: "Please input your E-mail!",
+                  message: "Please input your DOB!",
                 },
               ]}
             >
@@ -253,10 +261,11 @@ const Register = () => {
             <Form.Item
               name="contact"
               label="Contact No"
+              className="w-[350px] "
               rules={[
                 {
                   required: true,
-                  message: "Please input your password!",
+                  message: "Please input your contact!",
                 },
               ]}
               hasFeedback
@@ -266,6 +275,7 @@ const Register = () => {
             <Form.Item
               name="email"
               label="E-mail"
+              className="w-[300px] "
               rules={[
                 {
                   type: "email",
@@ -285,6 +295,7 @@ const Register = () => {
             <Form.Item
               name="confirm"
               label="Country"
+              className="w-[350px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -311,6 +322,7 @@ const Register = () => {
             <Form.Item
               name="confirm"
               label="State"
+              className="w-[300px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -339,6 +351,7 @@ const Register = () => {
             <Form.Item
               name="confirm"
               label="City"
+              className="w-[350px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -366,6 +379,7 @@ const Register = () => {
             <Form.Item
               name="confirm"
               label="Pincode"
+              className="w-[300px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -390,22 +404,17 @@ const Register = () => {
               <Input />
             </Form.Item>
           </div>
-<div className=" flex justify-start items-center w-[100%]" >
-<Form.Item
-        name="intro"
-        label="Address"
-        style={{width:"100%" }}
-      
-      >
-        <Input.TextArea showCount maxLength={100} />
-      </Form.Item>
-</div>
-
+          <div className=" flex justify-start items-center w-[100%]">
+            <Form.Item name="intro" label="Address" className="w-[350px] ">
+              <Input.TextArea showCount maxLength={100} />
+            </Form.Item>
+          </div>
 
           <div className="flex w-[100%]   justify-between items-center ">
             <Form.Item
               name="confirm"
               label="Password"
+              className="w-[350px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -433,6 +442,7 @@ const Register = () => {
             <Form.Item
               name="confirm"
               label="Confirm Password"
+              className="w-[300px] "
               dependencies={["password"]}
               hasFeedback
               rules={[
@@ -461,6 +471,7 @@ const Register = () => {
           <Form.Item
             name="agreement"
             valuePropName="checked"
+            className="w-[350px] "
             rules={[
               {
                 validator: (_, value) =>
