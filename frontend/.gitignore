@@ -2,13 +2,14 @@
 
 # dependencies
 /node_modules
+/.pnp
+.pnp.js
 
 # testing
 /coverage
 
 # production
- root /var/www/imperial-management/ImperialWeb/client;
-
+/build
 
 # misc
 .DS_Store

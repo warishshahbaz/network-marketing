@@ -23,7 +23,7 @@ const onFinish = (values) => {
 };
   return (
     <>
-      <div className="w-full h-[50vh] flex justify-center items-center " >
+      <div className="w-full h-[50vh] flex justify-center items-center  " >
       <Card sx={{padding:"7px",width:"400px", display:"flex",justifyContent:"center",alignItems:"center", }} >
       <Form
       name="normal_login"

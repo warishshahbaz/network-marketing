@@ -27,6 +27,9 @@ class Util {
       result + Math.random().toString().split(".")[1].substr(0, 3)
     ).toUpperCase();
   }
+  getVarifactionCode() {
+    return Math.floor(1000 + Math.random() * 9000);
+  }
 }
 
 module.exports = new Util();
